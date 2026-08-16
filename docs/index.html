@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ERICK CASTAÑEDA - Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap para ayudar a centrar y ordenar cosas -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    
+    <!-- AQUÍ EMPIEZA LA MAGIA DEL DISEÑO (CSS) -->
+    <style>
+        body {
+            /* Fondo con degradado oscuro parecido al de la imagen */
+            background: linear-gradient(135deg, #0d0e15 0%, #1a1025 100%);
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            padding-bottom: 50px;
+        }
+        
+        /* Estilos para el encabezado y la foto */
+        .profile-header {
+            text-align: center;
+            padding: 50px 0 30px 0;
+        }
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            /* Borde brillante cyan/neón */
+            border: 3px solid #00f3ff;
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.5);
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        
+        /* Estilo para los títulos con color neón */
+        .neon-text {
+            color: #00f3ff;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        .subtitle {
+            color: #a29bfe;
+            font-size: 1.1rem;
+        }
+
+        /* Las "cajas" o tarjetas oscuras de fondo */
+        .custom-card {
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Cuadrícula para las tecnologías */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        /* Estilo para tus botones de enlaces */
+        .custom-btn {
+            background: transparent;
+            border: 1px solid #00f3ff;
+            color: #00f3ff;
+            border-radius: 8px;
+            padding: 10px;
+            transition: all 0.3s ease;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .custom-btn:hover {
+            background: #00f3ff;
+            color: #000;
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.6);
+        }
+
+        /* Ajuste para pantallas pequeñas (celulares) */
+        @media (max-width: 768px) {
+            .tech-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Contenedor principal que centra todo -->
+    <div class="container" style="max-width: 800px;">
+        
+        <!-- ENCABEZADO: Foto, Nombre y Profesión -->
+        <div class="profile-header">
+            <!-- Para poner tu foto, cambia el enlace de src="" por la imagen que quieras -->
+            <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="profile-img">
+            <h1 class="neon-text">Erick Castañeda</h1>
+            <p class="subtitle">Creador Digital · Estudiante de Programación</p>
+        </div>
+
+        <!-- SECCIÓN 1: Sobre mí -->
+        <div class="custom-card">
+            <h3 class="neon-text">🚀 Sobre mí</h3>
+            <p>Soy un apasionado por la tecnología y la creación visual. Actualmente estoy estudiando los fundamentos de Python y Machine Learning. Combino este aprendizaje técnico con mi experiencia trabajando con herramientas de manipulación de imágenes como Adobe Photoshop y edición de video, buscando siempre crear proyectos innovadores.</p>
+        </div>
+
+        <!-- SECCIÓN 2: Tecnologías -->
+        <div class="custom-card">
+            <h3 class="neon-text">🛠️ Tecnologías y Herramientas</h3>
+            <div class="tech-grid">
+                <div>Python</div>
+                <div>Machine Learning</div>
+                <div>Adobe Photoshop</div>
+                <div>Edición de Video</div>
+                <div>HTML & CSS</div>
+                <div>Git & GitHub</div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 3: Tus botones originales -->
+        <div class="custom-card text-center">
+            <h3 class="neon-text" style="margin-bottom: 25px;">🔗 Mis Enlaces</h3>
+            <button onclick="location.href='https://platzi.com/cursos/docker-fundamentos/'" class="btn btn-block custom-btn">Mi curso de Docker</button>
+            <button onclick="location.href='http://aminespinoza.com'" class="btn btn-block custom-btn">Mi sitio web</button>
+            <button onclick="location.href='https://www.linkedin.com/in/aminespinoza/'" class="btn btn-block custom-btn">Conecta en mi perfil de LinkedIn</button>
+            <button onclick="location.href='https://www.youtube.com/aminespinoza'" class="btn btn-block custom-btn">Mira mi canal de Youtube</button>
+        </div>
+
+        <!-- PIE DE PÁGINA -->
+        <div class="text-center" style="margin-top: 20px; color: #666;">
+            <small>por Erick Castañeda — 2026</small>
+        </div>
+
+    </div>
+</body>
+</html>
